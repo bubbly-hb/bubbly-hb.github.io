@@ -119,7 +119,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -181,7 +181,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-05-13 16:32:40 / Modified: 18:20:50" itemprop="dateCreated datePublished" datetime="2023-05-13T16:32:40+08:00">2023-05-13</time>
+      <time title="Created: 2023-05-13 16:32:40 / Modified: 18:27:15" itemprop="dateCreated datePublished" datetime="2023-05-13T16:32:40+08:00">2023-05-13</time>
     </span>
 
   
@@ -197,104 +197,15 @@
           <h1 id="source"><a href="#source" class="headerlink" title="source"></a>source</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source FileName</span><br></pre></td></tr></table></figure>
 <p>在当前 bash 环境下读取并执行 FileName 中的命令。通常可用 . 来替代。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">中间有空格</span></span><br><span class="line">. FileName</span><br></pre></td></tr></table></figure>
-<p>source（或点）命令通常用于重新执行刚修改的初始化文档，如 .bash_profile 和 .profile 这些配置文件。</p>
-<h2 id="source-filename-与-sh-filename-及-x2F-filename执行脚本的区别"><a href="#source-filename-与-sh-filename-及-x2F-filename执行脚本的区别" class="headerlink" title="source filename 与 sh filename 及.&#x2F;filename执行脚本的区别"></a>source filename 与 sh filename 及.&#x2F;filename执行脚本的区别</h2><ul>
-<li>当shell脚本具有可执行权限时，用sh filename与.&#x2F;filename执行脚本是没有区别的。.&#x2F;filename是因为当前目录没有在PATH中，所以”.”是用来表示当前目录的。</li>
-<li>sh filename 重新建立一个子shell，在子shell中执行脚本里面的语句，该子shell继承父shell的环境变量，但子shell新建的、改变的变量不会被带回父shell，除非使用export。</li>
-<li>source filename：这个命令其实只是简单地读取脚本里面的语句依次在当前shell里面执行，没有建立新的子shell。那么脚本里面所有新建、改变变量的语句都会保存在当前shell里面。</li>
-</ul>
-<h1 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h1><p>tar本质上不是解压缩命令，而是备份文件的命令。是-xzf这几个参数实现了解压缩的功能。</p>
-<ul>
-<li>-x或–extract或–get: 从备份文件中还原文件；</li>
-<li>-z或–gzip或–ungzip: 通过gzip指令处理备份文件；</li>
-<li>-f&lt;备份文件&gt;或–file&#x3D;&lt;备份文件&gt;: 指定备份文件；</li>
-<li>-v显示打包过程详细信息</li>
-</ul>
-<h1 id="创建Goland快捷方式"><a href="#创建Goland快捷方式" class="headerlink" title="创建Goland快捷方式"></a>创建Goland快捷方式</h1><p>&#x2F;usr&#x2F;share&#x2F;applications路径下新建一个desktop文件：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name=Goland</span><br><span class="line">Comment=Goland IDE</span><br><span class="line">Exec=/bin/sh &quot;/usr/local/GoLand-2023.1.1/bin/goland.sh&quot;</span><br><span class="line">Icon=/usr/local/GoLand-2023.1.1/bin/goland.png</span><br><span class="line">Type=Application</span><br><span class="line">Terminal=false</span><br><span class="line">Encoding=UTF-8</span><br></pre></td></tr></table></figure>
-<p>新建好了去&#x2F;usr&#x2F;share&#x2F;applications文件夹用copy to到桌面，之前一直拖拖不动，以为文件内容错了。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/05/10/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="hb">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hhhhhb">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | hhhhhb">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/05/10/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2023-05-10 12:59:37" itemprop="dateCreated datePublished" datetime="2023-05-10T12:59:37+08:00">2023-05-10</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<p>source（或点）命令通常用于重新执行刚修改的初始化文档，如 .bash_profile 和 .profile 这些配置文件。
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/05/13/notes4Linux/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
